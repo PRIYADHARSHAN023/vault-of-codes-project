@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Editkaro.in Portfolio - Showcasing our best video editing work in various categories.">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <p>Showcasing the Best Work from Editkaro.in</p>
+        <nav>
+            <ul>
+                <li><button onclick="filterCategory('all')">All</button></li>
+                <li><button onclick="filterCategory('short')">Short Form</button></li>
+                <li><button onclick="filterCategory('long')">Long Form</button></li>
+                <li><button onclick="filterCategory('gaming')">Gaming</button></li>
+                <li><button onclick="filterCategory('football')">Football Edits</button></li>
+                <li><button onclick="filterCategory('ads')">eCommerce Ads</button></li>
+                <li><button onclick="filterCategory('documentary')">Documentary</button></li>
+                <li><button onclick="filterCategory('anime')">Anime</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <div class="video-container" data-category="short">
+            <h3>Short Form Videos</h3>
+            <div class="video-wrapper">
+                <video src="shortform1.mp4" controls></video>
+                <div class="video-overlay">
+                    <p>Short Form Video 1</p>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <video src="shortform2.mp4" controls></video>
+                <div class="video-overlay">
+                    <p>Short Form Video 2</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add other video categories similarly -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in | All rights reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
